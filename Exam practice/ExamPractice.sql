@@ -6,8 +6,10 @@ ORDER BY food ASC
 --Q2
 SELECT first_name,last_name,birth_date,county
 FROM persons
-WHERE county = 'Cork' OR county = 'Kerry'
+WHERE (county = 'Cork' OR county = 'Kerry')
 AND birth_date >= '2000-01-01'
+-- no one in this database fits this query either ^^^
+
 
 --Q3
 SELECT COUNT(person_id) AS 'People Count' ,county
